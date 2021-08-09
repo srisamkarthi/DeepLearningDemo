@@ -26,13 +26,6 @@ for i in range(9):
     plt.imshow(pixels, cmap='gray')
     plt.show()
 
-from matplotlib import pyplot as plt
-for i in range(9):
-    image = np.array(mnist.test.images[i], dtype='float')
-    pixels = mnist.test.images[i].reshape((28, 28))
-    plt.imshow(pixels, cmap='gray')
-    plt.show()
-
 # Define the neural network
 def neural_net(x_dict):
     # TF Estimator input is a dict, in case of multiple inputs
